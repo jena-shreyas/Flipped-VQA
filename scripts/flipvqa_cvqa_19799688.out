@@ -1,0 +1,42 @@
+| distributed init (rank 0): env://, gpu 0
+| distributed init (rank 1): env://, gpu 1
+[21:49:08.051209] job dir: /scratch/jenas/BTP/Flipped-VQA
+[21:49:08.051460] Namespace(accum_iter=1,
+adapter_layer=32,
+adapter_len=10,
+batch_size=2,
+bias=3.5,
+blr=0.09,
+dataset='causalvidqa',
+device='cuda',
+dist_backend='nccl',
+dist_on_itp=False,
+dist_url='env://',
+distributed=True,
+epochs=5,
+gpu=0,
+llama_model_path='./pretrained/llama/',
+local_rank=-1,
+lr=None,
+max_feats=10,
+max_seq_len=256,
+min_lr=0.0,
+model='7B',
+num_workers=0,
+output_dir='./checkpoint/causalvidqa',
+pin_mem=False,
+qav=True,
+rank=0,
+resume='',
+seed=0,
+start_epoch=0,
+sub=False,
+tau=100.0,
+vaq=True,
+warmup_epochs=2,
+weight_decay=0.14,
+world_size=2)
+[21:49:14.125821] Num train data: 1000
+[21:49:16.752617] Num val data: 1000
+[21:49:16.896988] Using model: 7B
+[21:49:16.904829] loading from pretrained/llama/7B/consolidated.00.pth

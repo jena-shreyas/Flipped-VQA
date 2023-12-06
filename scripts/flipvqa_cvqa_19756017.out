@@ -1,0 +1,61 @@
+| distributed init (rank 0): env://, gpu 0
+[08:23:57.306910] job dir: /scratch/jenas/BTP/Flipped-VQA
+[08:23:57.307146] Namespace(accum_iter=1,
+adapter_layer=32,
+adapter_len=10,
+batch_size=2,
+bias=3.5,
+blr=0.09,
+dataset='causalvidqa',
+device='cuda',
+dist_backend='nccl',
+dist_on_itp=False,
+dist_url='env://',
+distributed=True,
+epochs=5,
+gpu=0,
+llama_model_path='./pretrained/llama/',
+local_rank=-1,
+lr=None,
+max_feats=10,
+max_seq_len=512,
+min_lr=0.0,
+model='7B',
+num_workers=0,
+output_dir='./checkpoint/causalvidqa',
+pin_mem=False,
+qav=True,
+rank=0,
+resume='',
+seed=0,
+start_epoch=0,
+sub=False,
+tau=100.0,
+vaq=True,
+warmup_epochs=2,
+weight_decay=0.14,
+world_size=1)
+[08:24:07.783495] Num train data: 8660
+[08:24:09.118448] Num val data: 1237
+[08:24:09.216631] Using model: 7B
+[08:24:09.249056] loading from pretrained/llama/7B/consolidated.00.pth
+[08:24:45.302641] base lr: 9.00e-02
+[08:24:45.302822] actual lr: 7.03e-04
+[08:24:45.302886] accumulate grad iterations: 1
+[08:24:45.302940] effective batch size: 2
+[08:24:45.453452] AdamW (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.95)
+    eps: 1e-08
+    lr: 0.000703125
+    weight_decay: 0.0
+
+Parameter Group 1
+    amsgrad: False
+    betas: (0.9, 0.95)
+    eps: 1e-08
+    lr: 0.000703125
+    weight_decay: 0.14
+)
+[08:24:45.453713] Start training for 5 epochs

@@ -1,0 +1,7 @@
+slurmstepd: error: *** JOB 19872121 ON cdr2622 CANCELLED AT 2023-12-05T00:59:19 ***
+The following modules were not unloaded:
+  (Use "module --force purge" to unload all):
+
+  1) CCconfig         4) imkl/2020.1.217    7) libfabric/1.10.1
+  2) gentoo/2020      5) intel/2020.1.217   8) openmpi/4.0.3
+  3) gcccore/.9.3.0   6) ucx/1.8.0          9) StdEnv/2020

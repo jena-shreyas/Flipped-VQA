@@ -1,0 +1,68 @@
+| distributed init (rank 0): env://, gpu 0
+[09:36:49.356549] job dir: /scratch/jenas/BTP/Flipped-VQA
+[09:36:49.356742] Namespace(accum_iter=1,
+adapter_layer=32,
+adapter_len=10,
+batch_size=2,
+bias=3.5,
+blr=0.09,
+dataset='causalvidqa',
+device='cuda',
+dist_backend='nccl',
+dist_on_itp=False,
+dist_url='env://',
+distributed=True,
+epochs=5,
+gpu=0,
+llama_model_path='./pretrained/llama/',
+local_rank=-1,
+lr=None,
+max_feats=10,
+max_seq_len=256,
+min_lr=0.0,
+model='7B',
+num_workers=0,
+output_dir='./checkpoint/causalvidqa',
+pin_mem=False,
+qav=True,
+rank=0,
+resume='',
+seed=0,
+start_epoch=0,
+sub=False,
+tau=100.0,
+vaq=True,
+warmup_epochs=2,
+weight_decay=0.14,
+world_size=1)
+[09:38:19.834685] Num train data: 8660
+[09:38:21.074356] Num val data: 1237
+[09:38:24.045780] Using model: 7B
+[09:38:24.047147] loading from pretrained/llama/7B/consolidated.00.pth
+[09:39:42.802760] base lr: 9.00e-02
+[09:39:42.802913] actual lr: 7.03e-04
+[09:39:42.802961] accumulate grad iterations: 1
+[09:39:42.803002] effective batch size: 2
+[09:39:42.963663] AdamW (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.95)
+    eps: 1e-08
+    lr: 0.000703125
+    weight_decay: 0.0
+
+Parameter Group 1
+    amsgrad: False
+    betas: (0.9, 0.95)
+    eps: 1e-08
+    lr: 0.000703125
+    weight_decay: 0.14
+)
+[09:39:42.963893] Start training for 5 epochs
+[09:39:44.360914] Epoch: [0]  [   0/4330]  eta: 1:39:34  lr: 0.000000  loss: 5.0079 (5.0079)  vqa_loss: 1.8213 (1.8213)  vaq_loss: 0.9004 (0.9004)  qav_loss: 2.2853 (2.2853)  time: 1.3797  data: 0.1473  max mem: 26575
+[09:55:18.476622] Epoch: [0]  [1082/4330]  eta: 0:46:43  lr: 0.000088  loss: 3.4259 (4.0314)  vqa_loss: 0.3770 (0.8073)  vaq_loss: 0.9990 (1.0985)  qav_loss: 2.0102 (2.1256)  time: 0.8783  data: 0.0047  max mem: 26622
+[09:57:10.836337] max sequence length overflow
+[09:57:10.836541] max sequence length overflow
+[09:57:10.836633] max sequence length overflow
+[10:10:49.629024] Epoch: [0]  [2164/4330]  eta: 0:31:06  lr: 0.000176  loss: 2.8963 (3.6089)  vqa_loss: 0.3733 (0.5929)  vaq_loss: 0.7437 (0.9857)  qav_loss: 1.8370 (2.0303)  time: 0.8582  data: 0.0048  max mem: 26622
+[10:14:15.683570] Loss is nan, stopping training

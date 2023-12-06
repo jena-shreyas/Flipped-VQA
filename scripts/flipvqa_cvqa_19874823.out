@@ -1,0 +1,112 @@
+| distributed init (rank 0): env://, gpu 0
+[02:28:02.756083] job dir: /scratch/jenas/BTP/Flipped-VQA
+[02:28:02.756336] Namespace(accum_iter=1,
+adapter_layer=32,
+adapter_len=10,
+batch_size=2,
+bias=3.5,
+blr=0.09,
+dataset='causalvidqa',
+device='cuda',
+dist_backend='nccl',
+dist_on_itp=False,
+dist_url='env://',
+distributed=True,
+epochs=5,
+gpu=0,
+llama_model_path='./pretrained/llama/',
+local_rank=-1,
+lr=None,
+max_feats=10,
+max_seq_len=256,
+min_lr=0.0,
+model='7B',
+num_workers=0,
+output_dir='./checkpoint/causalvidqa',
+pin_mem=False,
+qav=True,
+rank=0,
+resume='',
+seed=0,
+start_epoch=0,
+sub=False,
+tau=100.0,
+vaq=True,
+warmup_epochs=2,
+weight_decay=0.14,
+world_size=1)
+[02:28:09.287708] Num train data: 1500
+[02:28:10.684353] Num val data: 1237
+[02:28:10.684697] Loading model ...
+[02:28:10.900504] Using model: 7B
+[02:28:10.901822] loading from pretrained/llama/7B/consolidated.00.pth
+[02:29:45.562991] Loaded checkpoints
+[02:30:00.180680] Loaded model
+[02:30:00.180895] base lr: 9.00e-02
+[02:30:00.180947] actual lr: 7.03e-04
+[02:30:00.180996] accumulate grad iterations: 1
+[02:30:00.181042] effective batch size: 2
+[02:30:00.364575] AdamW (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.95)
+    eps: 1e-08
+    lr: 0.000703125
+    weight_decay: 0.0
+
+Parameter Group 1
+    amsgrad: False
+    betas: (0.9, 0.95)
+    eps: 1e-08
+    lr: 0.000703125
+    weight_decay: 0.14
+)
+[02:30:00.364842] Start training for 5 epochs
+[02:30:01.785223] Epoch: [0]  [  0/750]  eta: 0:16:17  lr: 0.000000  loss: 6.4849 (6.4849)  vqa_loss: 2.2148 (2.2148)  vaq_loss: 1.9697 (1.9697)  qav_loss: 2.3013 (2.3013)  time: 1.3032  data: 0.1169  max mem: 26573
+[02:32:43.520755] Epoch: [0]  [187/750]  eta: 0:08:08  lr: 0.000088  loss: 3.6813 (4.8585)  vqa_loss: 0.5547 (1.4000)  vaq_loss: 0.9023 (1.2488)  qav_loss: 2.1090 (2.2098)  time: 0.8673  data: 0.0056  max mem: 26620
+[02:35:27.274882] Epoch: [0]  [374/750]  eta: 0:05:27  lr: 0.000175  loss: 3.4663 (4.1855)  vqa_loss: 0.3867 (0.9155)  vaq_loss: 1.0801 (1.1563)  qav_loss: 1.9964 (2.1137)  time: 0.8681  data: 0.0055  max mem: 26620
+[02:38:09.227616] Epoch: [0]  [561/750]  eta: 0:02:44  lr: 0.000263  loss: 2.8093 (3.8517)  vqa_loss: 0.3894 (0.7400)  vaq_loss: 0.6494 (1.0752)  qav_loss: 1.8556 (2.0364)  time: 0.8658  data: 0.0063  max mem: 26620
+[02:40:53.505046] Epoch: [0]  [748/750]  eta: 0:00:01  lr: 0.000351  loss: 3.1456 (3.6764)  vqa_loss: 0.4023 (0.6533)  vaq_loss: 0.8579 (1.0555)  qav_loss: 1.7624 (1.9676)  time: 0.8742  data: 0.0123  max mem: 26620
+[02:40:54.379119] Epoch: [0]  [749/750]  eta: 0:00:00  lr: 0.000351  loss: 3.1689 (3.6757)  vqa_loss: 0.4058 (0.6530)  vaq_loss: 0.9668 (1.0555)  qav_loss: 1.7624 (1.9672)  time: 0.8739  data: 0.0114  max mem: 26620
+[02:40:54.379420] Epoch: [0] Total time: 0:10:53 (0.8719 s / it)
+[02:40:54.411339] Averaged stats: lr: 0.000351  loss: 3.1689 (3.6757)  vqa_loss: 0.4058 (0.6530)  vaq_loss: 0.9668 (1.0555)  qav_loss: 1.7624 (1.9672)
+[02:40:55.084613] Epoch: [0]  [  0/619]  eta: 0:06:48  lr: 0.000351  acc: 0.5000 (0.5000)  time: 0.6596  data: 0.0685  max mem: 26620
+[02:42:14.462006] max sequence length overflow
+[02:42:14.462260] max sequence length overflow
+[02:42:14.462326] max sequence length overflow
+[02:42:14.462387] max sequence length overflow
+[02:42:14.462447] max sequence length overflow
+[02:42:14.462540] max sequence length overflow
+[02:42:14.462602] max sequence length overflow
+[02:42:14.462661] max sequence length overflow
+[02:42:14.462720] max sequence length overflow
+[02:42:14.462778] max sequence length overflow
+[02:42:14.462861] max sequence length overflow
+[02:42:14.462923] max sequence length overflow
+[02:42:14.462981] max sequence length overflow
+[02:42:14.463038] max sequence length overflow
+[02:42:14.463097] max sequence length overflow
+[02:42:19.763797] Epoch: [0]  [154/619]  eta: 0:04:16  lr: 0.000351  acc: 0.0000 (0.3214)  time: 0.5409  data: 0.0291  max mem: 26620
+[02:42:19.776238] max sequence length overflow
+[02:42:19.776346] max sequence length overflow
+[02:42:19.776412] max sequence length overflow
+[02:42:19.776470] max sequence length overflow
+[02:42:19.776547] max sequence length overflow
+[02:42:19.776641] max sequence length overflow
+[02:42:19.776706] max sequence length overflow
+[02:42:19.776763] max sequence length overflow
+[02:42:19.776823] max sequence length overflow
+[02:42:19.776881] max sequence length overflow
+[02:42:19.776965] max sequence length overflow
+[02:42:19.777027] max sequence length overflow
+[02:42:19.777087] max sequence length overflow
+[02:42:19.777144] max sequence length overflow
+[02:42:19.777213] max sequence length overflow
+[02:43:44.873388] Epoch: [0]  [308/619]  eta: 0:02:51  lr: 0.000351  acc: 0.0000 (0.3143)  time: 0.5832  data: 0.0204  max mem: 26620
+[02:45:09.589679] Epoch: [0]  [462/619]  eta: 0:01:26  lr: 0.000351  acc: 0.0000 (0.3080)  time: 0.5494  data: 0.0107  max mem: 26620
+[02:46:34.439917] Epoch: [0]  [616/619]  eta: 0:00:01  lr: 0.000351  acc: 0.0000 (0.3138)  time: 0.5517  data: 0.0112  max mem: 26620
+[02:46:35.293527] Epoch: [0]  [618/619]  eta: 0:00:00  lr: 0.000351  acc: 0.0000 (0.3147)  time: 0.5391  data: 0.0110  max mem: 26620
+[02:46:35.293754] Epoch: [0] Total time: 0:05:40 (0.5507 s / it)
+[02:46:35.453925] Averaged stats: lr: 0.000351  acc: 0.0000 (0.3147)
+[02:46:39.171544] Epoch: [1]  [  0/750]  eta: 0:15:38  lr: 0.000352  loss: 3.0591 (3.0591)  vqa_loss: 0.4373 (0.4373)  vaq_loss: 1.0381 (1.0381)  qav_loss: 1.5835 (1.5835)  time: 1.2512  data: 0.1113  max mem: 26620
+[02:49:21.596097] Epoch: [1]  [187/750]  eta: 0:08:09  lr: 0.000439  loss: 2.5871 (2.7734)  vqa_loss: 0.3721 (0.3582)  vaq_loss: 0.6587 (0.8775)  qav_loss: 1.5263 (1.5376)  time: 0.8618  data: 0.0058  max mem: 26620

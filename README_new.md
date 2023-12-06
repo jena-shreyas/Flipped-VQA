@@ -1,7 +1,7 @@
 ## Steps :
 
 - For environment setup, execute the setup.sh file.
-- For downloading and setting up the pretrained LLaMa model, follow the instructions given in `Dataset and LLaMa preparation` section of the original README.
+- For downloading and setting up the pretrained LLaMa model, follow the instructions given in `Dataset and LLaMa preparation` section of the original [README.md](https://github.com/jena-shreyas/Flipped-VQA/blob/master/README.md).
 - Download the CLIP-extracted video features from [here](https://iitkgpacin-my.sharepoint.com/:f:/g/personal/shreyasjena_kgpian_iitkgp_ac_in/EtYpcn3skvxClLMwprdvMwQB2HvQeRac1sU4kntsW9mnPw?e=ejdQSx) and put the .pth file in data/causalvidqa/.
 - Now, run the train.py. 
 
